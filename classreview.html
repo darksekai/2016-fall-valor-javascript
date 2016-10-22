@@ -3,6 +3,7 @@
 <script>
   function inCreepyabandonedresturantscene(){
     alert("You awake in an unfamilar establishment and you catch the smell of a dead body. You notice three suits with razor sharp teeth and claws. There is a rat, a cat, and an owl.")
+    alert("You awake in an unfamilar establishment and you catch the smell of a dead body's. You notice three suits with razor sharp teeth and claws. There is a rat, a cat, and an owl.")
     var suits;
 
     suits = prompt("Enter "Examine" to look at the suits in more deatil, or Enter "Roam" to look around the old facility.")
@@ -11,20 +12,30 @@
              Examinescene()
 
       }
-       
+
        else if (suits =="Roam"){
        		Roamscene()
 
        }
    function Examinescene(){
-   		alert()
+   		alert("You notice that the rat is missing an arm. The owl is missing it's face plate.The cat is missing it's left and right arms!")
+      alert("You hear a loud Banging as if something metal is banging against a wooden box.")
+      var Examineing
+      Examineing = prompt("Enter "toward noise" to go toward the noise, or enter "Roam" to look around  the facility.")
 
-   }         
+        if(Examineing =="toward noise"){
+          towardnoisescene
+        }
+
+        else if(Examineing =="Roam"){
+        Roamscene
+
+
+   }
 }
 
-
-
-
+  var story
+  story = (+inCreepyabandonedresturantscene())
 
 
 
