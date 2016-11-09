@@ -29,6 +29,9 @@
     </style>
   </head>
   <body>
+
+      <button type = "button" onclick="shortStory()"> click me for story </button>
+
     <h1>Welcome to the place where I tell you about myself</h1>
     <p>For part two i have added two simple questions. Whats your name? and where do you live? After you answer these questions the computer will give you a third pop up saying hi your name plus ur borough. I forgot to mention that all of these questions are in the form of pop ups that have a question box at the bottom. That was my small synopsis completed.</p>
     <p>Here's how you can make a large modern house in minecraft SEEN</p>
@@ -55,10 +58,12 @@
     </div>
   </body>
   <script>
+  function shortStory(){
     var username;
       username = prompt("what is your name?");
     var userlocation;
       userlocation = prompt("Where do you live?");
       alert("Hi " + username + " from " + userlocation);
+    }
   </script>
 </html>
