@@ -3,15 +3,15 @@
 </head>
 <body>
 <script>
-
-var numtimescalled = 0
-function HelloWorld(){
-     alert("hi NHA");
-     return numtimescalled+1
-}
-var r = HelloWorld()
-alert(r)
-
+  var numTimesCalled = 0;
+  function HelloWorld(){
+       alert("hi NHA");
+       numTimesCalled++;
+  }
+  HelloWorld();
+  HelloWorld();
+  HelloWorld();
+  alert(numTimesCalled);
 </script>
 </body>
 </html>
